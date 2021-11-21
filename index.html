@@ -5,8 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Player</title>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <!-- <link rel="stylesheet" href="./assets/styles/range.css" /> -->
   </head>
   <body>
-    <a href="#"> Music Player </a>
+    <footer id="area-playing" class="main-footer">
+      <div class="foot-content" id="info-container">
+        <span class="spantime" id="currentTimeSpan"> Current Time </span>
+        <strong id="music-title"> Music Title </strong>
+        <span class="spantime" id="fullTimeSpan"> Full Time </span>
+      </div>
+      <div class="foot-content" id="time-container">
+        <input type="range" id="music-time-range" min="0" max="100" />
+      </div>
+      <div class="foot-content" id="controls-container">
+        <ul>
+          <li>
+            <button>
+              <img
+                src="./assets/images/backward-fast.svg"
+                alt="BackWard Button Image"
+                title="Anterior"
+              />
+            </button>
+          </li>
+          <li>
+            <button>
+              <img
+                src="./assets/images/play.svg"
+                alt=" Play | Pause Button "
+                title="Play | Pause"
+              />
+            </button>
+          </li>
+          <li>
+            <button>
+              <img
+                src="./assets/images/forward-fast.svg"
+                alt="Forward Button Image"
+                title="Próxima"
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
