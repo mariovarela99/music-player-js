@@ -3,6 +3,7 @@ html {
   color: #333333;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 * {
@@ -11,4 +12,81 @@ html {
   text-decoration: none;
   box-sizing: border-box;
   font-family: sans-serif;
+}
+
+footer.main-footer {
+  width: 94%;
+  margin: 2em auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer.main-footer div.foot-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+footer.main-footer div#info-container {
+  justify-content: space-between;
+  margin-bottom: 1em;
+  height: auto;
+}
+
+footer.main-footer div#info-container span.spantime {
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: 500;
+  color: #666666;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+footer.main-footer div#info-container strong#music-title {
+  font-size: 1.2em;
+  line-height: 2;
+  color: #333333;
+  font-style: italic;
+  font-weight: 900;
+}
+
+footer.main-footer div#time-container {
+  justify-content: center;
+}
+
+footer.main-footer div#time-container input[type="range"]#music-time-range {
+  /* -webkit-appearance: none; */
+  width: 100%;
+  overflow: hidden;
+
+  height: 4px;
+  border-radius: 50px;
+  outline: none;
+}
+
+div#controls-container {
+  justify-content: center;
+}
+
+div#controls-container ul {
+  display: flex;
+}
+
+div#controls-container ul li {
+  display: flex;
+  margin: 0px 5px 0;
+}
+
+div#controls-container ul li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  -webkit-appearance: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
