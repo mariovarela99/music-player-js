@@ -14,13 +14,23 @@ html {
   font-family: sans-serif;
 }
 
+main.main-player {
+  display: flex;
+  min-height: 100vh;
+}
+
 footer.main-footer {
-  width: 94%;
+  width: 100%;
   margin: 0 auto 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0.8em 1em 0;
+  box-shadow: 2px 2px 10px #666666;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 footer.main-footer div.foot-content {
@@ -31,7 +41,6 @@ footer.main-footer div.foot-content {
 
 footer.main-footer div#info-container {
   justify-content: space-between;
-  margin-bottom: 1em;
   height: auto;
 }
 
@@ -61,13 +70,14 @@ footer.main-footer div#time-container input[type="range"]#music-time-range {
   width: 100%;
   overflow: hidden;
 
-  height: 4px;
+  height: 3px;
   border-radius: 50px;
   outline: none;
 }
 
 div#controls-container {
   justify-content: center;
+  height: 50px;
 }
 
 div#controls-container ul {
